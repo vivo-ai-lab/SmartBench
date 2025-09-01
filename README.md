@@ -43,7 +43,7 @@ SmartBench 将设备端 LLM 功能分为以下五个类别，共 20 个具体任
 
 采用“LLM-as-a-Judge”方法进行主观问题评估。为每个功能类别精心设计不同的 LLM 评估提示，特别是对于内容创作、信息抽取和通知管理，为每个任务设计了独特的评分提示，使评分更符合人类感知。每个问题总分为 10 分，并为每个任务的评估提示提供详细的评分维度和标准，以文本续写为例：
 
-![alt text](assets\text_continue.jpg)
+![alt text](https://github.com/vivo-ai-lab/SmartBench/blob/main/assets/text_continue.jpg)
 
 ## 实验
 
@@ -117,5 +117,6 @@ SmartBench 使用的开源数据集及其许可信息如下表所示：
 1. 随着技术的进步，设备端 LLM 的功能将持续演变。我们将继续根据新功能的发布更新数据集。
 
 2. SmartBench 是专门为中文用户使用场景设计的。不同国家的智能手机用户的使用习惯和方法可能差异显著。未来，我们将继续支持多种语言。
+
 
 
