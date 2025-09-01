@@ -37,8 +37,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--eval_prompts_path", default = "SmartBench\\evaluate_prompt", type=str, help="the path to automated evaluation of prompts.")
-    parser.add_argument("--eval_date_path", default = "E:\\2025\\SmartBench\\model_res", type=str, help="eval date path")
-    parser.add_argument("--eval_res_path", default = "E:\\2025\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
+    parser.add_argument("--model_res", default = "E:\\2025\\SmartBench\\model_res", type=str, help="eval date path")
+    parser.add_argument("--eval_res", default = "E:\\2025\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
     args = parser.parse_args()
 
     
@@ -89,4 +89,5 @@ if __name__ == "__main__":
             with open(f"{args.eval_res_path}\\{task}_eval_res.json","a",encoding="utf-8") as outputs:
 
                 outputs.write(json.dumps(final_res,ensure_ascii=False) + "\n")
+
 
