@@ -49,15 +49,14 @@ SmartBench 将设备端 LLM 功能分为以下五个类别，共 20 个具体任
 
 ### BF16 精度评估
 
-评估了 BlueLM-3B、InternVL2.5-4B、MiniCPM3-4B、Qwen2.5-3B 和 Qwen2-VL-2B 等代表性设备端 LLM/MLLM 在 SmartBench 上的表现（BF16 参数精度）。使用 GPT-4 Turbo（gpt-4-turbo-04-09）作为评判 LLM。结果显示，BlueLM-3B 平均得分最高。
-
-![alt text](assets\BF16.jpg)
+评估了 BlueLM-3B、InternVL2.5-4B、MiniCPM3-4B、Qwen2.5-3B 和 Qwen2-VL-2B 等代表性设备端 LLM/MLLM 在 SmartBench 上的表现（BF16 参数精度）。使用 GPT-4 Turbo（gpt-4-turbo-04-09）作为评判 LLM。
+![alt text](https://github.com/vivo-ai-lab/SmartBench/blob/main/assets/BF16.jpg)
 
 ### INT4 精度评估
 
 将 BlueLM-3B 和 Qwen2.5-3B 模型部署在搭载高通骁龙 8 Gen 3 SoC 的 vivo iQOO 12 智能手机的 NPU 上，量化模型为 W4A16。量化模型保留了超过 80% 的原始能力，整体平均保留率约为 90%。
 
-![alt text](assets\INT4.jpg)
+![alt text](https://github.com/vivo-ai-lab/SmartBench/blob/main/assets/INT4.jpg)
 
 ### 人类测试
 
@@ -117,6 +116,7 @@ SmartBench 使用的开源数据集及其许可信息如下表所示：
 1. 随着技术的进步，设备端 LLM 的功能将持续演变。我们将继续根据新功能的发布更新数据集。
 
 2. SmartBench 是专门为中文用户使用场景设计的。不同国家的智能手机用户的使用习惯和方法可能差异显著。未来，我们将继续支持多种语言。
+
 
 
 
