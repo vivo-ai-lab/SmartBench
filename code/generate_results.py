@@ -7,9 +7,9 @@ from tqdm import tqdm
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("--test_model_path", default = "E:\\2024\\version1\\prompt\\code", type=str, help="interface path of the model to be evaluated.")
-parser.add_argument("--data_path", default = "E:\\2024\\给徐东\\data - 副本", type=str, help="test data path.")
-parser.add_argument("--model_res", default = "E:\\2024\\SmartBench\\model_res", type=str, help="path to save model inference results.")
+parser.add_argument("--test_model_path", default = "E:\\2025\\version1\\prompt\\code", type=str, help="interface path of the model to be evaluated.")
+parser.add_argument("--data_path", default = "E:\\2025\\data", type=str, help="test data path.")
+parser.add_argument("--model_res", default = "E:\\2025\\SmartBench\\model_res", type=str, help="path to save model inference results.")
 
 args = parser.parse_args()
 
@@ -49,3 +49,4 @@ if __name__ == '__main__':
 
                 with open(f"{args.model_res}\\{task}_res.json","a",encoding="utf-8") as outputs:
                     outputs.write(json.dumps(single_save_file,ensure_ascii=False) + "\n")
+
