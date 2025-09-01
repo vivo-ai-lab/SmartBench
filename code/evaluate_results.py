@@ -4,7 +4,7 @@ import random
 import sys
 
 from tqdm import tqdm
-sys.path.append("E:\\2024\\version1\\prompt\\code")
+sys.path.append("E:\\2025\\version1\\prompt\\code")
 from qwplus import qwplus
 from gemini import gemini
 from qwmax import qwmax
@@ -36,7 +36,7 @@ def find_docx_files(root_folder):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--eval_prompts_path", default = "E:\\2024\\SmartBench\\evaluate_prompt", type=str, help="the path to automated evaluation of prompts.")
+    parser.add_argument("--eval_prompts_path", default = "SmartBench\\evaluate_prompt", type=str, help="the path to automated evaluation of prompts.")
     parser.add_argument("--eval_date_path", default = "E:\\2024\\SmartBench\\model_res", type=str, help="eval date path")
     parser.add_argument("--eval_res_path", default = "E:\\2024\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
     args = parser.parse_args()
@@ -87,4 +87,5 @@ if __name__ == "__main__":
             }
 
             with open(f"{args.eval_res_path}\\{task}_eval_res.json","a",encoding="utf-8") as outputs:
+
                 outputs.write(json.dumps(final_res,ensure_ascii=False) + "\n")
