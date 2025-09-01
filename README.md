@@ -72,21 +72,21 @@ SmartBench 将设备端 LLM 功能分为以下五个类别，共 20 个具体任
 # 生成评估结果
 cd code
 
-python generate_results.py --test_model_path <path_to_model> --data_path <path_to_data> --eval_date_path <path_to_eval_date>
+python generate_results.py --test_model_path <path_to_model> --data_path <path_to_data> --model_res <path_to_eval_date>
 ```
 
 ### 2. 采用自动化评估的方式对结果进行评估
 
 ```bash
 # 运行自动化评估
-python evaluate_results.py --eval_prompts_path <path_to_eval_prompts> --eval_date_path <path_to_eval_date> --eval_res_path <path_to_eval_res>
+python evaluate_results.py --eval_prompts_path <path_to_eval_prompts> --model_res <path_to_eval_date> --eval_res <path_to_eval_res>
 ```
 
 ### 3. 对评估结果进行处理获取最后结果
 
 ```bash
 # 处理评估结果
-python process_results.py --eval_res_path <path_to_eval_res> --score_save_path <path_to_final_results>
+python process_results.py --eval_res <path_to_eval_res> --score_save_path <path_to_final_results>
 ```
 
 
@@ -116,6 +116,7 @@ SmartBench 使用的开源数据集及其许可信息如下表所示：
 1. 随着技术的进步，设备端 LLM 的功能将持续演变。我们将继续根据新功能的发布更新数据集。
 
 2. SmartBench 是专门为中文用户使用场景设计的。不同国家的智能手机用户的使用习惯和方法可能差异显著。未来，我们将继续支持多种语言。
+
 
 
 
