@@ -20,7 +20,7 @@ SmartBench 是第一个专门针对中文智能手机场景下设备端大语言
 
 SmartBench 将设备端 LLM 功能分为以下五个类别，共 20 个具体任务：
 
-![alt text](assets\task.jpg)
+![alt text](https://github.com/vivo-ai-lab/SmartBench/blob/main/assets/task.jpg)
 
 
 ### 数据来源
@@ -117,4 +117,5 @@ SmartBench 使用的开源数据集及其许可信息如下表所示：
 1. 随着技术的进步，设备端 LLM 的功能将持续演变。我们将继续根据新功能的发布更新数据集。
 
 2. SmartBench 是专门为中文用户使用场景设计的。不同国家的智能手机用户的使用习惯和方法可能差异显著。未来，我们将继续支持多种语言。
+
 
