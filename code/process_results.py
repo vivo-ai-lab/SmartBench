@@ -6,8 +6,8 @@ import os
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--eval_res", default = "E:\\2024\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
-    parser.add_argument("--score_save_path", default = "E:\\2024\\SmartBench\\evaluate_prompt", type=str, help="the save path for the final scores on each task.")
+    parser.add_argument("--eval_res", default = "E:\\2025\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
+    parser.add_argument("--score_save_path", default = "E:\\2025\\SmartBench\\evaluate_prompt", type=str, help="the save path for the final scores on each task.")
 
     args = parser.parse_args()
     
@@ -54,3 +54,4 @@ if __name__ == "__main__":
         with open(args.score_save_path,"a",encoding="utf-8") as outputs:
 
             outputs.write(json.dumps(final_score,ensure_ascii=False) + "\n")
+
