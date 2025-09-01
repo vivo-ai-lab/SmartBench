@@ -41,6 +41,10 @@ if __name__ == "__main__":
 
         average_scores = {key: total_scores[key] / count[key] for key in total_scores if count[key] != 0}
 
+        if task == "文本纠错":
+            # 将各个维度的平均分乘以10
+            average_scores = {key: score * 10 for key, score in average_scores.items()}
+
         final_score = {"任务":task, "分数":average_scores}
 
         print(">>>>>>>>>>>>>>>>>>>>>>各个任务上的最终评分<<<<<<<<<<<<<<<<<<<<<<")
@@ -48,4 +52,5 @@ if __name__ == "__main__":
 
         # 保存最终得分至指定文件下的txt文件
         with open(args.score_save_path,"a",encoding="utf-8") as outputs:
+
             outputs.write(json.dumps(final_score,ensure_ascii=False) + "\n")
