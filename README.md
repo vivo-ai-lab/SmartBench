@@ -117,6 +117,17 @@ SmartBench 使用的开源数据集及其许可信息如下表所示：
 
 2. SmartBench 是专门为中文用户使用场景设计的。不同国家的智能手机用户的使用习惯和方法可能差异显著。未来，我们将继续支持多种语言。
 
+## 引用
+```bash
+@article{lu2025smartbench,
+  title={SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?},
+  author={Lu, Xudong and Gao, Haohao and Wu, Renshou and Ren, Shuai and Chen, Xiaoxin and Li, Hongsheng and Li, Fangyuan},
+  journal={arXiv preprint arXiv:2503.06029},
+  year={2025}
+}
+```
+
+
 
 
 
