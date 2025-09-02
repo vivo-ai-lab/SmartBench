@@ -4,11 +4,11 @@ import random
 import sys
 
 from tqdm import tqdm
+
 sys.path.append("E:\\2025\\version1\\prompt\\code")
-from qwplus import qwplus
-from gemini import gemini
+
 from qwmax import qwmax
-from BlueLM import BlueLM
+
 from docx import Document
 import os
 import glob
@@ -89,5 +89,6 @@ if __name__ == "__main__":
             with open(f"{args.eval_res_path}\\{task}_eval_res.json","a",encoding="utf-8") as outputs:
 
                 outputs.write(json.dumps(final_res,ensure_ascii=False) + "\n")
+
 
 
