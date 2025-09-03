@@ -27,7 +27,7 @@ if __name__ == '__main__':
         
         if os.path.isfile(file_path):
             with open(file_path, 'r',encoding="utf-8") as file:
-                lines = [json.loads(line) for line in file.readlines()][:2]
+                lines = [json.loads(line) for line in file.readlines()]
             print(f">>>[{task}] Task inference begins...")
             for index, line in enumerate(tqdm(lines)):
                 request, refer_answer = line["inputs"], line["targets"]
@@ -53,4 +53,5 @@ if __name__ == '__main__':
 
                 with open(save_path,"a",encoding="utf-8") as outputs:
                     outputs.write(json.dumps(single_save_file,ensure_ascii=False) + "\n")
+
 
