@@ -7,10 +7,7 @@ import glob
 from tqdm import tqdm
 
 sys.path.append("/data/auto_evaluate/api")
-from qwplus import qwplus
-from gemini import gemini
 from qwmax import qwmax
-from BlueLM import BlueLM
 
 
 
@@ -91,3 +88,4 @@ if __name__ == "__main__":
             with open(save_path,"a",encoding="utf-8") as outputs:
 
                 outputs.write(json.dumps(final_res,ensure_ascii=False) + "\n")
+
