@@ -18,6 +18,7 @@ def get_request(task, eval_prompt_dict, lines):
         task_content = line["request"]
         # print(task_content)
         task_answer = line["response"]
+        if task_answer == "":continue
         refer_answer = line["refer_answer"]
         request = eval_prompt.replace("specific_task",task_content).replace("refer_answer",refer_answer).replace("ai_answer",task_answer)
         request_list.append(request)
@@ -88,4 +89,5 @@ if __name__ == "__main__":
             with open(save_path,"a",encoding="utf-8") as outputs:
 
                 outputs.write(json.dumps(final_res,ensure_ascii=False) + "\n")
+
 
