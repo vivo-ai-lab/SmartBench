@@ -6,7 +6,7 @@ import os
 import glob
 from tqdm import tqdm
 
-sys.path.append("/data/vjuicefs_ai_translation_wl/11171286/task_2024/auto_evaluate")
+sys.path.append("/data/auto_evaluate/api")
 from qwplus import qwplus
 from gemini import gemini
 from qwmax import qwmax
@@ -36,9 +36,9 @@ def find_txt_files(root_folder):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--eval_prompts_path", default = "E:\\2024\\SmartBench\\evaluate_prompt", type=str, help="the path to automated evaluation of prompts.")
-    parser.add_argument("--model_res", default = "E:\\2024\\SmartBench\\model_res", type=str, help="eval date path")
-    parser.add_argument("--eval_res", default = "E:\\2024\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
+    parser.add_argument("--eval_prompts_path", default = "E:\\2025\\SmartBench\\evaluate_prompt", type=str, help="the path to automated evaluation of prompts.")
+    parser.add_argument("--model_res", default = "E:\\2025\\SmartBench\\model_res", type=str, help="eval date path")
+    parser.add_argument("--eval_res", default = "E:\\2025\\SmartBench\\eval_res", type=str, help="path to save evaluation results")
     args = parser.parse_args()
 
     
@@ -89,4 +89,5 @@ if __name__ == "__main__":
             save_path = os.path.join(args.eval_res,f"{task}_eval_res.json")
 
             with open(save_path,"a",encoding="utf-8") as outputs:
+
                 outputs.write(json.dumps(final_res,ensure_ascii=False) + "\n")
