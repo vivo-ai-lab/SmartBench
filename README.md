@@ -1,4 +1,4 @@
-# SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?
+# SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant? [EMNLP 2025]
 
 ## 项目简介
 
@@ -126,6 +126,7 @@ SmartBench 使用的开源数据集及其许可信息如下表所示：
   year={2025}
 }
 ```
+
 
 
 
